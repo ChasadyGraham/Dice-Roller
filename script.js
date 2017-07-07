@@ -3,11 +3,17 @@
 // pick a random number between 1 and 6 for our roll of the die
 
 // This time if either die roll is 1 then score should be 0 
+function 
+
+var dice = ['⚀''⚁' '⚂''⚃'  ⚄ ⚅', '\u2681', '\u2682', '\u2683', '\u2684', '\u2685'];
+
 var dice1 = Math.floor(Math.random()*6 + 1);
 var dice2 = Math.floor(Math.random()*6 + 1);
 var score = dice1 + dice2;
 
-function rollDice() {
+console.log(dice1, dice[dice1-1])
+
+function diceRoll() {
 if (dice1 === 1 || dice2 === 1) {
   (score = 0);
   //we need to check if there are doubles.  
@@ -21,7 +27,7 @@ if (dice1 === 1 || dice2 === 1) {
 }
 }
 
-console.log("You rolled a "+die1+" and a "+die2+" for a score of "+score);
+console.log("You rolled a "+dice1+" and a "+dice2+" for a score of "+score);
 //var dice1 = Math.floor(Math.random()*6 + 1);
 //var die2 = Math.floor(Math.random()*6 + 1);
 //var score;
